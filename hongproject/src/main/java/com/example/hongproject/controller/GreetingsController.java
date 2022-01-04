@@ -12,4 +12,10 @@ public class GreetingsController {
         model.addAttribute("username", "harann");
         return "greetings";
     }
+
+    @GetMapping("/bye")
+    public String goodBye(Model model) {
+        model.addAttribute("nickname", "harann");
+        return "goodbye";
+    }
 }
