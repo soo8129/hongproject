@@ -9,13 +9,13 @@ public class GreetingsController {
 
     @GetMapping("/hi")
     public String niceToMeetYou(Model model) {
-        model.addAttribute("username", "harann");
+        model.addAttribute("username", "Harann");
         return "greetings";
     }
 
     @GetMapping("/bye")
     public String goodBye(Model model) {
-        model.addAttribute("nickname", "harann");
+        model.addAttribute("nickname", "Harann");
         return "goodbye";
     }
 }
